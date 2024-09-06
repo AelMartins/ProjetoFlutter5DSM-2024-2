@@ -33,24 +33,30 @@ class ListaTransferencia extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        ItemTransferencia(),
-        ItemTransferencia(),
-        ItemTransferencia(),
+        ItemTransferencia(value: '100.00', accountNumber: '1234-5'),
       ],
     );
   }
 }
 
 class ItemTransferencia extends StatelessWidget {
-  const ItemTransferencia({super.key});
+  final String value;
+  final String accountNumber;
+
+  const ItemTransferencia({
+    required this.value,
+    required this.accountNumber,
+    super.key,
+  });
+
 
   @override
   Widget build(BuildContext context) {
-    return const Card(
+    return Card(
       child: ListTile(
-        leading: Icon(Icons.monetization_on, color: Colors.green),
-        title: Text('1234-5'),
-        subtitle: Text('100.0'),
+        leading: const Icon(Icons.monetization_on, color: Colors.green),
+        title: Text(value),
+        subtitle: Text(accountNumber),
       ),
     );
   }
