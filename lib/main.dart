@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/transfer_list.dart';
+import 'package:my_app/screens/contact_list.dart';
+// import 'screens/transfer_list.dart';
 
 void main() => runApp(const BankApp());
 
@@ -10,7 +11,7 @@ class BankApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bank Transfer',
-      home: TransferList(),
+      home: ContactList(),
     );
   }
 }
