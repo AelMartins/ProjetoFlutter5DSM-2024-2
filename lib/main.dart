@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/screens/contact_list.dart';
-// import 'screens/transfer_list.dart';
+import 'screens/menu_screen.dart';
 
-void main() => runApp(const BankApp());
+void main() {
+  runApp(const MyApp());
+}
 
-class BankApp extends StatelessWidget {
-  const BankApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bank Transfer',
-      home: ContactList(),
+      title: 'NeoBank',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const MenuScreen(),
     );
   }
 }
