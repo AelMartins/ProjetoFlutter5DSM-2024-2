@@ -17,7 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ***
 
-> [!DISCENTE]
+> [!DISCENTES]
+>
 > Leonardo Henrique Bernardes de Souza | 1091392223034
 >
 > Samuel Luiz Martins dos Santos | 1091392223033
@@ -58,7 +59,6 @@ samples, guidance on mobile development, and a full API reference.
             - Deve ter um botão para cadasrar um novo livro.
     - CADASTRO DE LIVRO
         - Formulário com no mínimo 6 inputs para os atributos do cadastro.
-            - Capa;
             - Título;
             - Autor;
             - Editora;
